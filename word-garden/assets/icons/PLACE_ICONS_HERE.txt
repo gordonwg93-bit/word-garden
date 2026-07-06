@@ -1,0 +1,5 @@
+Put these 4 files in this folder (see README.md for sizes and a Gemini prompt idea):
+- icon-192.png
+- icon-512.png
+- icon-512-maskable.png
+- apple-touch-icon.png

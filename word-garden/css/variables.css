@@ -1,0 +1,61 @@
+/* =========================================================
+   BINDI'S FAIRY WORD GARDEN — DESIGN TOKENS
+   Change values here to re-theme the whole app.
+   ========================================================= */
+:root {
+  /* --- Palette: dusk garden, not primary-colour toy-box --- */
+  --color-bg:        #FFF7EF;   /* warm blush cream, page background */
+  --color-bg-soft:   #FFEFE0;   /* card background */
+  --color-blossom:   #FF8FA3;   /* main pink - buttons, headers */
+  --color-blossom-dk:#E56B84;   /* pressed / border state */
+  --color-meadow:    #8FC98A;   /* green - success, growth */
+  --color-meadow-dk: #5FA45A;
+  --color-sun:       #FFC857;   /* gold - stars, rewards */
+  --color-sun-dk:    #E6A93A;
+  --color-lilac:     #C8A2E0;   /* fairy purple - accents, Bindi */
+  --color-lilac-dk:  #A97CC4;
+  --color-sky:       #8ECAE6;   /* sky blue - secondary buttons */
+  --color-sky-dk:    #5FA8C7;
+  --color-ink:       #4A3B4D;   /* soft plum-black, all body text */
+  --color-ink-light: #7C6B7F;
+  --color-white:     #FFFFFF;
+  --color-error:     #E4574C;
+
+  /* --- Type --- */
+  --font-display: 'Fredoka', 'Baloo 2', system-ui, sans-serif;   /* headers, buttons, mascot speech */
+  --font-write:   'Andika', sans-serif;                          /* the target word itself + tracing */
+  --font-body:    'Fredoka', system-ui, sans-serif;              /* everything else */
+
+  --fs-word-huge:   clamp(3rem, 12vw, 6rem);
+  --fs-word-large:  clamp(2.2rem, 8vw, 3.6rem);
+  --fs-heading:     clamp(1.6rem, 5vw, 2.4rem);
+  --fs-body:        1.15rem;
+  --fs-small:       0.95rem;
+
+  /* --- Shape & motion --- */
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 8px 24px rgba(74, 59, 77, 0.12);
+  --shadow-pop:  0 4px 0 rgba(0,0,0,0.12);
+  --ease-bounce: cubic-bezier(.34, 1.56, .64, 1);
+  --dur-fast: 150ms;
+  --dur-med: 350ms;
+
+  /* --- Layout --- */
+  --touch-target: 64px;   /* minimum tap size for small fingers */
+  --max-width: 900px;
+}
+
+/* Colour-blind / low-vision friendly focus ring, always visible for a11y */
+:focus-visible {
+  outline: 4px solid var(--color-sky-dk);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

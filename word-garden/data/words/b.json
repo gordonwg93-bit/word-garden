@@ -1,0 +1,235 @@
+{
+  "letter": "b",
+  "words": [
+    {
+      "id": "b001",
+      "word": "ball",
+      "wordZh": "球",
+      "pinyin": "qiú",
+      "emoji": "⚽",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Let's kick the ball.",
+      "sentenceZh": "我们来踢球吧。"
+    },
+    {
+      "id": "b002",
+      "word": "banana",
+      "wordZh": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "emoji": "🍌",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The monkey eats a banana.",
+      "sentenceZh": "猴子吃香蕉。"
+    },
+    {
+      "id": "b003",
+      "word": "bear",
+      "wordZh": "熊",
+      "pinyin": "xióng",
+      "emoji": "🐻",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bear sleeps in winter.",
+      "sentenceZh": "熊在冬天睡觉。"
+    },
+    {
+      "id": "b004",
+      "word": "bird",
+      "wordZh": "鸟",
+      "pinyin": "niǎo",
+      "emoji": "🐦",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bird sings in the tree.",
+      "sentenceZh": "鸟在树上唱歌。"
+    },
+    {
+      "id": "b005",
+      "word": "book",
+      "wordZh": "书",
+      "pinyin": "shū",
+      "emoji": "📖",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I read a book before bed.",
+      "sentenceZh": "我睡前读一本书。"
+    },
+    {
+      "id": "b006",
+      "word": "boat",
+      "wordZh": "船",
+      "pinyin": "chuán",
+      "emoji": "🚤",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The boat floats on the water.",
+      "sentenceZh": "船漂在水上。"
+    },
+    {
+      "id": "b007",
+      "word": "bee",
+      "wordZh": "蜜蜂",
+      "pinyin": "mìfēng",
+      "emoji": "🐝",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bee makes honey.",
+      "sentenceZh": "蜜蜂酿蜜。"
+    },
+    {
+      "id": "b008",
+      "word": "butterfly",
+      "wordZh": "蝴蝶",
+      "pinyin": "húdié",
+      "emoji": "🦋",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The butterfly has pretty wings.",
+      "sentenceZh": "蝴蝶有漂亮的翅膀。"
+    },
+    {
+      "id": "b009",
+      "word": "bicycle",
+      "wordZh": "自行车",
+      "pinyin": "zìxíngchē",
+      "emoji": "🚲",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I ride my bicycle.",
+      "sentenceZh": "我骑自行车。"
+    },
+    {
+      "id": "b010",
+      "word": "balloon",
+      "wordZh": "气球",
+      "pinyin": "qìqiú",
+      "emoji": "🎈",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The balloon floats up.",
+      "sentenceZh": "气球飘起来了。"
+    },
+    {
+      "id": "b011",
+      "word": "big",
+      "wordZh": "大",
+      "pinyin": "dà",
+      "emoji": "🦣",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The mammoth is very big.",
+      "sentenceZh": "猛犸象很大。"
+    },
+    {
+      "id": "b012",
+      "word": "bathtub",
+      "wordZh": "浴缸",
+      "pinyin": "yùgāng",
+      "emoji": "🛁",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I splash in the bathtub.",
+      "sentenceZh": "我在浴缸里玩水。"
+    },
+    {
+      "id": "b013",
+      "word": "blue",
+      "wordZh": "蓝色",
+      "pinyin": "lánsè",
+      "emoji": "🔵",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The sky is blue.",
+      "sentenceZh": "天空是蓝色的。"
+    },
+    {
+      "id": "b014",
+      "word": "bread",
+      "wordZh": "面包",
+      "pinyin": "miànbāo",
+      "emoji": "🍞",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I eat bread for breakfast.",
+      "sentenceZh": "我早餐吃面包。"
+    },
+    {
+      "id": "b015",
+      "word": "bus",
+      "wordZh": "公共汽车",
+      "pinyin": "gōnggòng qìchē",
+      "emoji": "🚌",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We ride the bus to school.",
+      "sentenceZh": "我们坐公共汽车上学。"
+    },
+    {
+      "id": "b016",
+      "word": "baby",
+      "wordZh": "婴儿",
+      "pinyin": "yīng'ér",
+      "emoji": "👶",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The baby is sleeping.",
+      "sentenceZh": "婴儿在睡觉。"
+    },
+    {
+      "id": "b017",
+      "word": "bounce",
+      "wordZh": "弹跳",
+      "pinyin": "tántiào",
+      "emoji": "🏀",
+      "partOfSpeech": "verb",
+      "sentenceEn": "The ball can bounce.",
+      "sentenceZh": "球会弹跳。"
+    },
+    {
+      "id": "b018",
+      "word": "bake",
+      "wordZh": "烤",
+      "pinyin": "kǎo",
+      "emoji": "🧁",
+      "partOfSpeech": "verb",
+      "sentenceEn": "We bake a cake together.",
+      "sentenceZh": "我们一起烤蛋糕。"
+    },
+    {
+      "id": "b019",
+      "word": "beach",
+      "wordZh": "海滩",
+      "pinyin": "hǎitān",
+      "emoji": "🏖️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We play at the beach.",
+      "sentenceZh": "我们在海滩玩。"
+    },
+    {
+      "id": "b020",
+      "word": "bed",
+      "wordZh": "床",
+      "pinyin": "chuáng",
+      "emoji": "🛌",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I sleep in my bed.",
+      "sentenceZh": "我睡在我的床上。"
+    },
+    {
+      "id": "b021",
+      "word": "brush",
+      "wordZh": "牙刷",
+      "pinyin": "yáshuā",
+      "emoji": "🪥",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I brush with my toothbrush.",
+      "sentenceZh": "我用牙刷刷牙。"
+    },
+    {
+      "id": "b022",
+      "word": "basket",
+      "wordZh": "篮子",
+      "pinyin": "lánzi",
+      "emoji": "🧺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I put fruit in the basket.",
+      "sentenceZh": "我把水果放进篮子里。"
+    },
+    {
+      "id": "b023",
+      "word": "bubble",
+      "wordZh": "泡泡",
+      "pinyin": "pàopào",
+      "emoji": "🫧",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I blow a bubble.",
+      "sentenceZh": "我吹一个泡泡。"
+    }
+  ]
+}

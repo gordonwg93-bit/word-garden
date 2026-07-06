@@ -1,0 +1,190 @@
+/* =========================================================
+   COMPONENTS
+   ========================================================= */
+
+/* --- Buttons --- */
+.btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-body);
+  min-height: var(--touch-target);
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--color-white);
+  background: var(--color-blossom);
+  box-shadow: 0 4px 0 var(--color-blossom-dk);
+  transition: transform var(--dur-fast) var(--ease-bounce), box-shadow var(--dur-fast);
+}
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--color-blossom-dk);
+}
+.btn--secondary { background: var(--color-sky); box-shadow: 0 4px 0 var(--color-sky-dk); }
+.btn--secondary:active { box-shadow: 0 0 0 var(--color-sky-dk); }
+.btn--sun { background: var(--color-sun); box-shadow: 0 4px 0 var(--color-sun-dk); color: var(--color-ink); }
+.btn--sun:active { box-shadow: 0 0 0 var(--color-sun-dk); }
+.btn--ghost {
+  background: transparent;
+  color: var(--color-ink);
+  box-shadow: none;
+  border: 3px solid var(--color-lilac);
+}
+.btn--ghost:active { transform: scale(0.96); }
+.btn--icon {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.6rem;
+}
+.btn:disabled { opacity: 0.4; box-shadow: none; transform: none; }
+
+/* --- Cards --- */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px;
+}
+
+/* --- Top bar (shared across screens) --- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0 10px;
+  position: relative;
+  z-index: 2;
+}
+.topbar__title {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.topbar__stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: var(--color-white);
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* --- Modal (parent gate, celebrations, etc.) --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(74, 59, 77, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+  animation: fadeIn var(--dur-med);
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.modal {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  animation: popIn var(--dur-med) var(--ease-bounce);
+}
+@keyframes popIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* --- Parent gate specific --- */
+.parent-gate__question {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 16px 0;
+  color: var(--color-lilac-dk);
+}
+.parent-gate__input {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 3px solid var(--color-lilac);
+  margin-bottom: 16px;
+}
+.parent-gate__note {
+  font-size: var(--fs-small);
+  color: var(--color-ink-light);
+  margin-top: 12px;
+}
+
+/* --- Bindi mascot speech bubble --- */
+.bindi-bubble {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin: 12px 0;
+}
+.bindi-bubble__avatar {
+  font-size: 3rem;
+  flex-shrink: 0;
+  animation: bob 2.4s ease-in-out infinite;
+}
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.bindi-bubble__text {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  border-bottom-left-radius: 4px;
+  padding: 12px 18px;
+  font-size: var(--fs-body);
+  box-shadow: var(--shadow-soft);
+}
+
+/* --- Progress ring (used on letter picker) --- */
+.progress-ring { position: relative; width: 100%; aspect-ratio: 1; }
+.progress-ring svg { transform: rotate(-90deg); width: 100%; height: 100%; }
+.progress-ring circle { fill: none; stroke-width: 8; }
+.progress-ring__bg { stroke: rgba(0,0,0,0.06); }
+.progress-ring__fill { stroke: var(--color-meadow); stroke-linecap: round; transition: stroke-dashoffset var(--dur-med); }
+.progress-ring__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* --- Toast / celebration confetti text --- */
+.celebrate-burst {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.celebrate-burst__text {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 10vw, 4rem);
+  font-weight: 700;
+  color: var(--color-sun-dk);
+  text-shadow: 0 4px 0 rgba(255,255,255,0.8);
+  animation: burstPop 900ms var(--ease-bounce) forwards;
+}
+@keyframes burstPop {
+  0%   { transform: scale(0.3) rotate(-8deg); opacity: 0; }
+  40%  { transform: scale(1.15) rotate(3deg); opacity: 1; }
+  70%  { transform: scale(1) rotate(0deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 0; }
+}

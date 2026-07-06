@@ -1,0 +1,115 @@
+{
+  "letter": "n",
+  "words": [
+    {
+      "id": "n001",
+      "word": "nose",
+      "wordZh": "鼻子",
+      "pinyin": "bízi",
+      "emoji": "👃",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I smell with my nose.",
+      "sentenceZh": "我用鼻子闻味道。"
+    },
+    {
+      "id": "n002",
+      "word": "nest",
+      "wordZh": "鸟窝",
+      "pinyin": "niǎowō",
+      "emoji": "🪺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bird builds a nest.",
+      "sentenceZh": "鸟搭建鸟窝。"
+    },
+    {
+      "id": "n003",
+      "word": "nut",
+      "wordZh": "坚果",
+      "pinyin": "jiānguǒ",
+      "emoji": "🥜",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The squirrel loves nuts.",
+      "sentenceZh": "松鼠喜欢坚果。"
+    },
+    {
+      "id": "n004",
+      "word": "night",
+      "wordZh": "夜晚",
+      "pinyin": "yèwǎn",
+      "emoji": "🌃",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The stars come out at night.",
+      "sentenceZh": "星星在夜晚出现。"
+    },
+    {
+      "id": "n005",
+      "word": "noisy",
+      "wordZh": "吵闹",
+      "pinyin": "chǎonào",
+      "emoji": "📢",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The playground is very noisy.",
+      "sentenceZh": "操场很吵闹。"
+    },
+    {
+      "id": "n006",
+      "word": "new",
+      "wordZh": "新",
+      "pinyin": "xīn",
+      "emoji": "✨",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I have new shoes.",
+      "sentenceZh": "我有新鞋子。"
+    },
+    {
+      "id": "n007",
+      "word": "nine",
+      "wordZh": "九",
+      "pinyin": "jiǔ",
+      "emoji": "9️⃣",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Nine plus one is ten.",
+      "sentenceZh": "九加一等于十。"
+    },
+    {
+      "id": "n008",
+      "word": "necklace",
+      "wordZh": "项链",
+      "pinyin": "xiàngliàn",
+      "emoji": "📿",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She wears a pretty necklace.",
+      "sentenceZh": "她戴着漂亮的项链。"
+    },
+    {
+      "id": "n009",
+      "word": "nice",
+      "wordZh": "友善",
+      "pinyin": "yǒushàn",
+      "emoji": "😇",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "He is very nice to me.",
+      "sentenceZh": "他对我很友善。"
+    },
+    {
+      "id": "n010",
+      "word": "nap",
+      "wordZh": "午睡",
+      "pinyin": "wǔshuì",
+      "emoji": "💤",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The baby takes a nap.",
+      "sentenceZh": "宝宝在午睡。"
+    },
+    {
+      "id": "n011",
+      "word": "notebook",
+      "wordZh": "笔记本",
+      "pinyin": "bǐjìběn",
+      "emoji": "📓",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I write in my notebook.",
+      "sentenceZh": "我在笔记本上写字。"
+    }
+  ]
+}

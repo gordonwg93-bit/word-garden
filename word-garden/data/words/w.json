@@ -1,0 +1,125 @@
+{
+  "letter": "w",
+  "words": [
+    {
+      "id": "w001",
+      "word": "water",
+      "wordZh": "水",
+      "pinyin": "shuǐ",
+      "emoji": "💧",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I drink water when thirsty.",
+      "sentenceZh": "口渴时我喝水。"
+    },
+    {
+      "id": "w002",
+      "word": "watermelon",
+      "wordZh": "西瓜",
+      "pinyin": "xīguā",
+      "emoji": "🍉",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The watermelon is juicy and sweet.",
+      "sentenceZh": "西瓜又多汁又甜。"
+    },
+    {
+      "id": "w003",
+      "word": "whale",
+      "wordZh": "鲸鱼",
+      "pinyin": "jīngyú",
+      "emoji": "🐋",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The whale swims in the ocean.",
+      "sentenceZh": "鲸鱼在海洋里游泳。"
+    },
+    {
+      "id": "w004",
+      "word": "wind",
+      "wordZh": "风",
+      "pinyin": "fēng",
+      "emoji": "🌬️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The wind blows the leaves.",
+      "sentenceZh": "风吹动树叶。"
+    },
+    {
+      "id": "w005",
+      "word": "wet",
+      "wordZh": "湿",
+      "pinyin": "shī",
+      "emoji": "💦",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "My hair is wet after a bath.",
+      "sentenceZh": "洗澡后我的头发是湿的。"
+    },
+    {
+      "id": "w006",
+      "word": "walk",
+      "wordZh": "走",
+      "pinyin": "zǒu",
+      "emoji": "🚶",
+      "partOfSpeech": "verb",
+      "sentenceEn": "We walk to the park.",
+      "sentenceZh": "我们走去公园。"
+    },
+    {
+      "id": "w007",
+      "word": "wave",
+      "wordZh": "挥手",
+      "pinyin": "huīshǒu",
+      "emoji": "👋",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I wave goodbye.",
+      "sentenceZh": "我挥手说再见。"
+    },
+    {
+      "id": "w008",
+      "word": "winter",
+      "wordZh": "冬天",
+      "pinyin": "dōngtiān",
+      "emoji": "⛄",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We build a snowman in winter.",
+      "sentenceZh": "我们在冬天堆雪人。"
+    },
+    {
+      "id": "w009",
+      "word": "window",
+      "wordZh": "窗户",
+      "pinyin": "chuānghù",
+      "emoji": "🪟",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I look out the window.",
+      "sentenceZh": "我看向窗户外面。"
+    },
+    {
+      "id": "w010",
+      "word": "wing",
+      "wordZh": "翅膀",
+      "pinyin": "chìbǎng",
+      "emoji": "🪽",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bird flaps its wing.",
+      "sentenceZh": "鸟拍打它的翅膀。"
+    },
+    {
+      "id": "w011",
+      "word": "wolf",
+      "wordZh": "狼",
+      "pinyin": "láng",
+      "emoji": "🐺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The wolf howls at the moon.",
+      "sentenceZh": "狼对着月亮嚎叫。"
+    },
+    {
+      "id": "w012",
+      "word": "wash",
+      "wordZh": "洗",
+      "pinyin": "xǐ",
+      "emoji": "🧼",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I wash my hands before dinner.",
+      "sentenceZh": "晚饭前我洗手。"
+    }
+  ]
+}

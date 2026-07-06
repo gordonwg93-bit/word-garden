@@ -1,0 +1,135 @@
+{
+  "letter": "r",
+  "words": [
+    {
+      "id": "r001",
+      "word": "rabbit",
+      "wordZh": "兔子",
+      "pinyin": "tùzi",
+      "emoji": "🐇",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The rabbit hops in the garden.",
+      "sentenceZh": "兔子在花园里跳跃。"
+    },
+    {
+      "id": "r002",
+      "word": "rain",
+      "wordZh": "雨",
+      "pinyin": "yǔ",
+      "emoji": "🌧️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The rain falls from the clouds.",
+      "sentenceZh": "雨从云中落下。"
+    },
+    {
+      "id": "r003",
+      "word": "rainbow",
+      "wordZh": "彩虹",
+      "pinyin": "cǎihóng",
+      "emoji": "🌈",
+      "partOfSpeech": "noun",
+      "sentenceEn": "A rainbow appears after rain.",
+      "sentenceZh": "雨后出现彩虹。"
+    },
+    {
+      "id": "r004",
+      "word": "red",
+      "wordZh": "红色",
+      "pinyin": "hóngsè",
+      "emoji": "🔴",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The apple is red.",
+      "sentenceZh": "苹果是红色的。"
+    },
+    {
+      "id": "r005",
+      "word": "rose",
+      "wordZh": "玫瑰",
+      "pinyin": "méigui",
+      "emoji": "🌹",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She smells the pink rose.",
+      "sentenceZh": "她闻粉色玫瑰花。"
+    },
+    {
+      "id": "r006",
+      "word": "run",
+      "wordZh": "跑",
+      "pinyin": "pǎo",
+      "emoji": "🏃",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I run fast in the park.",
+      "sentenceZh": "我在公园里跑得很快。"
+    },
+    {
+      "id": "r007",
+      "word": "road",
+      "wordZh": "马路",
+      "pinyin": "mǎlù",
+      "emoji": "🛣️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Look both ways before crossing the road.",
+      "sentenceZh": "过马路前要看两边。"
+    },
+    {
+      "id": "r008",
+      "word": "robot",
+      "wordZh": "机器人",
+      "pinyin": "jīqìrén",
+      "emoji": "🤖",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The robot beeps and moves.",
+      "sentenceZh": "机器人发出哔哔声并移动。"
+    },
+    {
+      "id": "r009",
+      "word": "ring",
+      "wordZh": "戒指",
+      "pinyin": "jièzhi",
+      "emoji": "💍",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She wears a shiny ring.",
+      "sentenceZh": "她戴着一个闪亮的戒指。"
+    },
+    {
+      "id": "r010",
+      "word": "river",
+      "wordZh": "河",
+      "pinyin": "hé",
+      "emoji": "🚣",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We row on the river.",
+      "sentenceZh": "我们在河上划船。"
+    },
+    {
+      "id": "r011",
+      "word": "read",
+      "wordZh": "读",
+      "pinyin": "dú",
+      "emoji": "📕",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I read a story every night.",
+      "sentenceZh": "我每晚读一个故事。"
+    },
+    {
+      "id": "r012",
+      "word": "round",
+      "wordZh": "圆",
+      "pinyin": "yuán",
+      "emoji": "⚪",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The ball is round.",
+      "sentenceZh": "球是圆的。"
+    },
+    {
+      "id": "r013",
+      "word": "rock",
+      "wordZh": "石头",
+      "pinyin": "shítou",
+      "emoji": "🗿",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I climb over the rock.",
+      "sentenceZh": "我爬过石头。"
+    }
+  ]
+}
