@@ -1,0 +1,65 @@
+{
+  "letter": "u",
+  "words": [
+    {
+      "id": "u001",
+      "word": "umbrella",
+      "wordZh": "雨伞",
+      "pinyin": "yǔsǎn",
+      "emoji": "☂️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I use an umbrella in the rain.",
+      "sentenceZh": "下雨时我用雨伞。"
+    },
+    {
+      "id": "u002",
+      "word": "up",
+      "wordZh": "上",
+      "pinyin": "shàng",
+      "emoji": "⬆️",
+      "partOfSpeech": "adverb",
+      "sentenceEn": "The balloon floats up.",
+      "sentenceZh": "气球往上飘。"
+    },
+    {
+      "id": "u003",
+      "word": "under",
+      "wordZh": "下面",
+      "pinyin": "xiàmiàn",
+      "emoji": "⬇️",
+      "partOfSpeech": "adverb",
+      "sentenceEn": "The cat hides under the bed.",
+      "sentenceZh": "猫躲在床下面。"
+    },
+    {
+      "id": "u004",
+      "word": "unicorn",
+      "wordZh": "独角兽",
+      "pinyin": "dújiǎoshòu",
+      "emoji": "🦄",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The unicorn has a magic horn.",
+      "sentenceZh": "独角兽有一个神奇的角。"
+    },
+    {
+      "id": "u005",
+      "word": "uncle",
+      "wordZh": "叔叔",
+      "pinyin": "shūshu",
+      "emoji": "🧔",
+      "partOfSpeech": "noun",
+      "sentenceEn": "My uncle tells jokes.",
+      "sentenceZh": "我叔叔讲笑话。"
+    },
+    {
+      "id": "u006",
+      "word": "upset",
+      "wordZh": "难过",
+      "pinyin": "nánguò",
+      "emoji": "😞",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "She feels upset about the rain.",
+      "sentenceZh": "她因为下雨感到难过。"
+    }
+  ]
+}

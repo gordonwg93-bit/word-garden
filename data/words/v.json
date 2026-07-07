@@ -1,0 +1,65 @@
+{
+  "letter": "v",
+  "words": [
+    {
+      "id": "v001",
+      "word": "van",
+      "wordZh": "面包车",
+      "pinyin": "miànbāochē",
+      "emoji": "🚐",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We travel in a van.",
+      "sentenceZh": "我们坐面包车旅行。"
+    },
+    {
+      "id": "v002",
+      "word": "vegetable",
+      "wordZh": "蔬菜",
+      "pinyin": "shūcài",
+      "emoji": "🥦",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I eat my vegetables.",
+      "sentenceZh": "我吃我的蔬菜。"
+    },
+    {
+      "id": "v003",
+      "word": "violin",
+      "wordZh": "小提琴",
+      "pinyin": "xiǎotíqín",
+      "emoji": "🎻",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She plays the violin.",
+      "sentenceZh": "她拉小提琴。"
+    },
+    {
+      "id": "v004",
+      "word": "volcano",
+      "wordZh": "火山",
+      "pinyin": "huǒshān",
+      "emoji": "🌋",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The volcano erupts with lava.",
+      "sentenceZh": "火山喷发出岩浆。"
+    },
+    {
+      "id": "v005",
+      "word": "vase",
+      "wordZh": "花瓶",
+      "pinyin": "huāpíng",
+      "emoji": "🏺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The flowers are in a vase.",
+      "sentenceZh": "花在花瓶里。"
+    },
+    {
+      "id": "v006",
+      "word": "vet",
+      "wordZh": "兽医",
+      "pinyin": "shòuyī",
+      "emoji": "🩺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The vet helps sick animals.",
+      "sentenceZh": "兽医帮助生病的动物。"
+    }
+  ]
+}

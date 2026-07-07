@@ -1,0 +1,105 @@
+{
+  "letter": "k",
+  "words": [
+    {
+      "id": "k001",
+      "word": "kite",
+      "wordZh": "风筝",
+      "pinyin": "fēngzheng",
+      "emoji": "🪁",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We fly a kite in the park.",
+      "sentenceZh": "我们在公园放风筝。"
+    },
+    {
+      "id": "k002",
+      "word": "koala",
+      "wordZh": "考拉",
+      "pinyin": "kǎolā",
+      "emoji": "🐨",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The koala sleeps in a tree.",
+      "sentenceZh": "考拉在树上睡觉。"
+    },
+    {
+      "id": "k003",
+      "word": "key",
+      "wordZh": "钥匙",
+      "pinyin": "yàoshi",
+      "emoji": "🔑",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I open the door with a key.",
+      "sentenceZh": "我用钥匙开门。"
+    },
+    {
+      "id": "k004",
+      "word": "kiss",
+      "wordZh": "亲吻",
+      "pinyin": "qīnwěn",
+      "emoji": "😘",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Mum gives me a kiss goodnight.",
+      "sentenceZh": "妈妈给我晚安吻。"
+    },
+    {
+      "id": "k005",
+      "word": "kangaroo",
+      "wordZh": "袋鼠",
+      "pinyin": "dàishǔ",
+      "emoji": "🦘",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The kangaroo hops across the yard.",
+      "sentenceZh": "袋鼠跳过院子。"
+    },
+    {
+      "id": "k006",
+      "word": "kind",
+      "wordZh": "善良",
+      "pinyin": "shànliáng",
+      "emoji": "💖",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "She is very kind to everyone.",
+      "sentenceZh": "她对每个人都很善良。"
+    },
+    {
+      "id": "k007",
+      "word": "kettle",
+      "wordZh": "水壶",
+      "pinyin": "shuǐhú",
+      "emoji": "🫖",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The kettle boils water.",
+      "sentenceZh": "水壶把水烧开。"
+    },
+    {
+      "id": "k008",
+      "word": "king",
+      "wordZh": "国王",
+      "pinyin": "guówáng",
+      "emoji": "🤴",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The king wears a crown.",
+      "sentenceZh": "国王戴着王冠。"
+    },
+    {
+      "id": "k009",
+      "word": "knee",
+      "wordZh": "膝盖",
+      "pinyin": "xīgài",
+      "emoji": "🦵",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I hurt my knee.",
+      "sentenceZh": "我伤了膝盖。"
+    },
+    {
+      "id": "k010",
+      "word": "knock",
+      "wordZh": "敲",
+      "pinyin": "qiāo",
+      "emoji": "✊",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Knock on the door first.",
+      "sentenceZh": "先敲门。"
+    }
+  ]
+}

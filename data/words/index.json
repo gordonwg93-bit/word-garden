@@ -1,0 +1,108 @@
+{
+  "letters": [
+    {
+      "letter": "a",
+      "count": 22
+    },
+    {
+      "letter": "b",
+      "count": 23
+    },
+    {
+      "letter": "c",
+      "count": 23
+    },
+    {
+      "letter": "d",
+      "count": 20
+    },
+    {
+      "letter": "e",
+      "count": 12
+    },
+    {
+      "letter": "f",
+      "count": 14
+    },
+    {
+      "letter": "g",
+      "count": 14
+    },
+    {
+      "letter": "h",
+      "count": 14
+    },
+    {
+      "letter": "i",
+      "count": 8
+    },
+    {
+      "letter": "j",
+      "count": 8
+    },
+    {
+      "letter": "k",
+      "count": 10
+    },
+    {
+      "letter": "l",
+      "count": 13
+    },
+    {
+      "letter": "m",
+      "count": 20
+    },
+    {
+      "letter": "n",
+      "count": 11
+    },
+    {
+      "letter": "o",
+      "count": 8
+    },
+    {
+      "letter": "p",
+      "count": 14
+    },
+    {
+      "letter": "q",
+      "count": 6
+    },
+    {
+      "letter": "r",
+      "count": 13
+    },
+    {
+      "letter": "s",
+      "count": 21
+    },
+    {
+      "letter": "t",
+      "count": 17
+    },
+    {
+      "letter": "u",
+      "count": 6
+    },
+    {
+      "letter": "v",
+      "count": 6
+    },
+    {
+      "letter": "w",
+      "count": 12
+    },
+    {
+      "letter": "x",
+      "count": 2
+    },
+    {
+      "letter": "y",
+      "count": 6
+    },
+    {
+      "letter": "z",
+      "count": 4
+    }
+  ]
+}

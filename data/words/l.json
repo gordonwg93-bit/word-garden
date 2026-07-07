@@ -1,0 +1,135 @@
+{
+  "letter": "l",
+  "words": [
+    {
+      "id": "l001",
+      "word": "lion",
+      "wordZh": "狮子",
+      "pinyin": "shīzi",
+      "emoji": "🦁",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The lion roars loudly.",
+      "sentenceZh": "狮子大声吼叫。"
+    },
+    {
+      "id": "l002",
+      "word": "lemon",
+      "wordZh": "柠檬",
+      "pinyin": "níngméng",
+      "emoji": "🍋",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The lemon tastes sour.",
+      "sentenceZh": "柠檬尝起来很酸。"
+    },
+    {
+      "id": "l003",
+      "word": "leaf",
+      "wordZh": "叶子",
+      "pinyin": "yèzi",
+      "emoji": "🍃",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The leaf falls from the tree.",
+      "sentenceZh": "叶子从树上落下。"
+    },
+    {
+      "id": "l004",
+      "word": "ladybug",
+      "wordZh": "瓢虫",
+      "pinyin": "piáochóng",
+      "emoji": "🐞",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The ladybug has red spots.",
+      "sentenceZh": "瓢虫有红色斑点。"
+    },
+    {
+      "id": "l005",
+      "word": "lamp",
+      "wordZh": "台灯",
+      "pinyin": "táidēng",
+      "emoji": "💡",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Turn on the lamp, please.",
+      "sentenceZh": "请打开台灯。"
+    },
+    {
+      "id": "l006",
+      "word": "laugh",
+      "wordZh": "笑",
+      "pinyin": "xiào",
+      "emoji": "😄",
+      "partOfSpeech": "verb",
+      "sentenceEn": "The joke makes me laugh.",
+      "sentenceZh": "这个笑话让我笑了。"
+    },
+    {
+      "id": "l007",
+      "word": "long",
+      "wordZh": "长",
+      "pinyin": "cháng",
+      "emoji": "🧣",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The scarf is very long.",
+      "sentenceZh": "这条围巾很长。"
+    },
+    {
+      "id": "l008",
+      "word": "lake",
+      "wordZh": "湖",
+      "pinyin": "hú",
+      "emoji": "🌊",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We swim in the lake.",
+      "sentenceZh": "我们在湖里游泳。"
+    },
+    {
+      "id": "l009",
+      "word": "lettuce",
+      "wordZh": "生菜",
+      "pinyin": "shēngcài",
+      "emoji": "🥬",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The rabbit eats lettuce.",
+      "sentenceZh": "兔子吃生菜。"
+    },
+    {
+      "id": "l010",
+      "word": "library",
+      "wordZh": "图书馆",
+      "pinyin": "túshūguǎn",
+      "emoji": "📚",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I borrow books from the library.",
+      "sentenceZh": "我从图书馆借书。"
+    },
+    {
+      "id": "l011",
+      "word": "lizard",
+      "wordZh": "蜥蜴",
+      "pinyin": "xīyì",
+      "emoji": "🦎",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The lizard suns itself on a rock.",
+      "sentenceZh": "蜥蜴在石头上晒太阳。"
+    },
+    {
+      "id": "l012",
+      "word": "lollipop",
+      "wordZh": "棒棒糖",
+      "pinyin": "bàngbàngtáng",
+      "emoji": "🍭",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I lick my lollipop.",
+      "sentenceZh": "我舔我的棒棒糖。"
+    },
+    {
+      "id": "l013",
+      "word": "love",
+      "wordZh": "爱",
+      "pinyin": "ài",
+      "emoji": "😍",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I love my family.",
+      "sentenceZh": "我爱我的家人。"
+    }
+  ]
+}

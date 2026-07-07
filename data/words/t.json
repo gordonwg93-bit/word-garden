@@ -1,0 +1,175 @@
+{
+  "letter": "t",
+  "words": [
+    {
+      "id": "t001",
+      "word": "tiger",
+      "wordZh": "老虎",
+      "pinyin": "lǎohǔ",
+      "emoji": "🐯",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The tiger has orange stripes.",
+      "sentenceZh": "老虎有橙色条纹。"
+    },
+    {
+      "id": "t002",
+      "word": "tree",
+      "wordZh": "树",
+      "pinyin": "shù",
+      "emoji": "🌳",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bird sits in the tree.",
+      "sentenceZh": "鸟坐在树上。"
+    },
+    {
+      "id": "t003",
+      "word": "train",
+      "wordZh": "火车",
+      "pinyin": "huǒchē",
+      "emoji": "🚂",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The train goes choo choo.",
+      "sentenceZh": "火车呜呜地开。"
+    },
+    {
+      "id": "t004",
+      "word": "turtle",
+      "wordZh": "乌龟",
+      "pinyin": "wūguī",
+      "emoji": "🐢",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The turtle walks slowly.",
+      "sentenceZh": "乌龟走得很慢。"
+    },
+    {
+      "id": "t005",
+      "word": "tomato",
+      "wordZh": "番茄",
+      "pinyin": "fānqié",
+      "emoji": "🍅",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The tomato is red and round.",
+      "sentenceZh": "番茄又红又圆。"
+    },
+    {
+      "id": "t006",
+      "word": "taxi",
+      "wordZh": "出租车",
+      "pinyin": "chūzūchē",
+      "emoji": "🚕",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We take a taxi home.",
+      "sentenceZh": "我们坐出租车回家。"
+    },
+    {
+      "id": "t007",
+      "word": "tall",
+      "wordZh": "高",
+      "pinyin": "gāo",
+      "emoji": "🏗️",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The crane is very tall.",
+      "sentenceZh": "起重机很高。"
+    },
+    {
+      "id": "t008",
+      "word": "tired",
+      "wordZh": "累",
+      "pinyin": "lèi",
+      "emoji": "😪",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel tired after playing.",
+      "sentenceZh": "玩耍后我觉得很累。"
+    },
+    {
+      "id": "t009",
+      "word": "talk",
+      "wordZh": "说话",
+      "pinyin": "shuōhuà",
+      "emoji": "🗣️",
+      "partOfSpeech": "verb",
+      "sentenceEn": "We talk about our day.",
+      "sentenceZh": "我们聊聊今天的事。"
+    },
+    {
+      "id": "t010",
+      "word": "touch",
+      "wordZh": "摸",
+      "pinyin": "mō",
+      "emoji": "👆",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Gently touch the kitten.",
+      "sentenceZh": "轻轻地摸小猫。"
+    },
+    {
+      "id": "t011",
+      "word": "teeth",
+      "wordZh": "牙齿",
+      "pinyin": "yáchǐ",
+      "emoji": "🦷",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I brush my teeth every day.",
+      "sentenceZh": "我每天刷牙。"
+    },
+    {
+      "id": "t012",
+      "word": "tent",
+      "wordZh": "帐篷",
+      "pinyin": "zhàngpeng",
+      "emoji": "⛺",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We sleep in a tent.",
+      "sentenceZh": "我们睡在帐篷里。"
+    },
+    {
+      "id": "t013",
+      "word": "two",
+      "wordZh": "二",
+      "pinyin": "èr",
+      "emoji": "2️⃣",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I have two hands.",
+      "sentenceZh": "我有两只手。"
+    },
+    {
+      "id": "t014",
+      "word": "three",
+      "wordZh": "三",
+      "pinyin": "sān",
+      "emoji": "3️⃣",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Three little pigs live here.",
+      "sentenceZh": "三只小猪住在这里。"
+    },
+    {
+      "id": "t015",
+      "word": "ten",
+      "wordZh": "十",
+      "pinyin": "shí",
+      "emoji": "🔟",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I count all the way to ten.",
+      "sentenceZh": "我数到十。"
+    },
+    {
+      "id": "t016",
+      "word": "toy",
+      "wordZh": "玩具",
+      "pinyin": "wánjù",
+      "emoji": "🎲",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I share my toy with you.",
+      "sentenceZh": "我和你分享我的玩具。"
+    },
+    {
+      "id": "t017",
+      "word": "thirsty",
+      "wordZh": "渴",
+      "pinyin": "kě",
+      "emoji": "🚰",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel thirsty after running.",
+      "sentenceZh": "跑步后我觉得渴。"
+    }
+  ]
+}

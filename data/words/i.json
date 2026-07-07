@@ -1,0 +1,85 @@
+{
+  "letter": "i",
+  "words": [
+    {
+      "id": "i001",
+      "word": "ice cream",
+      "wordZh": "冰淇淋",
+      "pinyin": "bīngqílín",
+      "emoji": "🍦",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I love strawberry ice cream.",
+      "sentenceZh": "我喜欢草莓冰淇淋。"
+    },
+    {
+      "id": "i002",
+      "word": "igloo",
+      "wordZh": "冰屋",
+      "pinyin": "bīngwū",
+      "emoji": "🧊",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The igloo is made of ice.",
+      "sentenceZh": "冰屋是用冰做的。"
+    },
+    {
+      "id": "i003",
+      "word": "insect",
+      "wordZh": "昆虫",
+      "pinyin": "kūnchóng",
+      "emoji": "🐛",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The insect crawls on a leaf.",
+      "sentenceZh": "昆虫在叶子上爬。"
+    },
+    {
+      "id": "i004",
+      "word": "island",
+      "wordZh": "岛",
+      "pinyin": "dǎo",
+      "emoji": "🏝️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We swim near the island.",
+      "sentenceZh": "我们在岛附近游泳。"
+    },
+    {
+      "id": "i005",
+      "word": "itchy",
+      "wordZh": "痒",
+      "pinyin": "yǎng",
+      "emoji": "🦟",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "My arm feels itchy.",
+      "sentenceZh": "我的手臂觉得痒。"
+    },
+    {
+      "id": "i006",
+      "word": "ill",
+      "wordZh": "生病",
+      "pinyin": "shēngbìng",
+      "emoji": "🤒",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel ill today.",
+      "sentenceZh": "我今天生病了。"
+    },
+    {
+      "id": "i007",
+      "word": "ink",
+      "wordZh": "墨水",
+      "pinyin": "mòshuǐ",
+      "emoji": "🖋️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The pen has blue ink.",
+      "sentenceZh": "这支笔有蓝色墨水。"
+    },
+    {
+      "id": "i008",
+      "word": "inside",
+      "wordZh": "里面",
+      "pinyin": "lǐmiàn",
+      "emoji": "📦",
+      "partOfSpeech": "adverb",
+      "sentenceEn": "The toy is inside the box.",
+      "sentenceZh": "玩具在盒子里面。"
+    }
+  ]
+}

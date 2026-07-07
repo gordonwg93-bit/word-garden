@@ -1,0 +1,205 @@
+{
+  "letter": "m",
+  "words": [
+    {
+      "id": "m001",
+      "word": "mum",
+      "wordZh": "妈妈",
+      "pinyin": "māma",
+      "emoji": "👩",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I love my mum.",
+      "sentenceZh": "我爱我的妈妈。"
+    },
+    {
+      "id": "m002",
+      "word": "moon",
+      "wordZh": "月亮",
+      "pinyin": "yuèliang",
+      "emoji": "🌙",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The moon shines at night.",
+      "sentenceZh": "月亮在晚上发光。"
+    },
+    {
+      "id": "m003",
+      "word": "monkey",
+      "wordZh": "猴子",
+      "pinyin": "hóuzi",
+      "emoji": "🐒",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The monkey swings in the tree.",
+      "sentenceZh": "猴子在树上荡秋千。"
+    },
+    {
+      "id": "m004",
+      "word": "mouse",
+      "wordZh": "老鼠",
+      "pinyin": "lǎoshǔ",
+      "emoji": "🐭",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The mouse hides in a hole.",
+      "sentenceZh": "老鼠躲在洞里。"
+    },
+    {
+      "id": "m005",
+      "word": "milk",
+      "wordZh": "牛奶",
+      "pinyin": "niúnǎi",
+      "emoji": "🥛",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I drink milk every morning.",
+      "sentenceZh": "我每天早上喝牛奶。"
+    },
+    {
+      "id": "m006",
+      "word": "mountain",
+      "wordZh": "山",
+      "pinyin": "shān",
+      "emoji": "⛰️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We hike up the mountain.",
+      "sentenceZh": "我们爬山。"
+    },
+    {
+      "id": "m007",
+      "word": "mango",
+      "wordZh": "芒果",
+      "pinyin": "mángguǒ",
+      "emoji": "🥭",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The mango is sweet and juicy.",
+      "sentenceZh": "芒果又甜又多汁。"
+    },
+    {
+      "id": "m008",
+      "word": "melon",
+      "wordZh": "甜瓜",
+      "pinyin": "tiánguā",
+      "emoji": "🍈",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We share a melon.",
+      "sentenceZh": "我们分享一个甜瓜。"
+    },
+    {
+      "id": "m009",
+      "word": "mirror",
+      "wordZh": "镜子",
+      "pinyin": "jìngzi",
+      "emoji": "🪞",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I look in the mirror.",
+      "sentenceZh": "我照镜子。"
+    },
+    {
+      "id": "m010",
+      "word": "music",
+      "wordZh": "音乐",
+      "pinyin": "yīnyuè",
+      "emoji": "🎵",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I love listening to music.",
+      "sentenceZh": "我喜欢听音乐。"
+    },
+    {
+      "id": "m011",
+      "word": "mud",
+      "wordZh": "泥巴",
+      "pinyin": "níbā",
+      "emoji": "🟤",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We jump in the mud.",
+      "sentenceZh": "我们在泥巴里跳。"
+    },
+    {
+      "id": "m012",
+      "word": "mermaid",
+      "wordZh": "美人鱼",
+      "pinyin": "měirényú",
+      "emoji": "🧜‍♀️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The mermaid swims in the sea.",
+      "sentenceZh": "美人鱼在海里游泳。"
+    },
+    {
+      "id": "m013",
+      "word": "mask",
+      "wordZh": "面具",
+      "pinyin": "miànjù",
+      "emoji": "🎭",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She wears a fairy mask.",
+      "sentenceZh": "她戴着仙女面具。"
+    },
+    {
+      "id": "m014",
+      "word": "mop",
+      "wordZh": "拖把",
+      "pinyin": "tuōbǎ",
+      "emoji": "🧹",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Dad uses a mop to clean.",
+      "sentenceZh": "爸爸用拖把打扫。"
+    },
+    {
+      "id": "m015",
+      "word": "map",
+      "wordZh": "地图",
+      "pinyin": "dìtú",
+      "emoji": "🗺️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We look at the map.",
+      "sentenceZh": "我们看地图。"
+    },
+    {
+      "id": "m016",
+      "word": "magic",
+      "wordZh": "魔法",
+      "pinyin": "mófǎ",
+      "emoji": "🪄",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The fairy has magic.",
+      "sentenceZh": "仙女有魔法。"
+    },
+    {
+      "id": "m017",
+      "word": "mailbox",
+      "wordZh": "邮箱",
+      "pinyin": "yóuxiāng",
+      "emoji": "📮",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I post a letter in the mailbox.",
+      "sentenceZh": "我把信投进邮箱。"
+    },
+    {
+      "id": "m018",
+      "word": "messy",
+      "wordZh": "乱",
+      "pinyin": "luàn",
+      "emoji": "🌀",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "My room is messy.",
+      "sentenceZh": "我的房间很乱。"
+    },
+    {
+      "id": "m019",
+      "word": "mitten",
+      "wordZh": "手套",
+      "pinyin": "shǒutào",
+      "emoji": "🧤",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I wear mittens in winter.",
+      "sentenceZh": "冬天我戴手套。"
+    },
+    {
+      "id": "m020",
+      "word": "movie",
+      "wordZh": "电影",
+      "pinyin": "diànyǐng",
+      "emoji": "🎬",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We watch a movie together.",
+      "sentenceZh": "我们一起看电影。"
+    }
+  ]
+}

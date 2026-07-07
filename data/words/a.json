@@ -1,0 +1,225 @@
+{
+  "letter": "a",
+  "words": [
+    {
+      "id": "a001",
+      "word": "apple",
+      "wordZh": "苹果",
+      "pinyin": "píngguǒ",
+      "emoji": "🍎",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I eat a red apple.",
+      "sentenceZh": "我吃一个红苹果。"
+    },
+    {
+      "id": "a002",
+      "word": "ant",
+      "wordZh": "蚂蚁",
+      "pinyin": "mǎyǐ",
+      "emoji": "🐜",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The ant is very small.",
+      "sentenceZh": "蚂蚁很小。"
+    },
+    {
+      "id": "a003",
+      "word": "arm",
+      "wordZh": "手臂",
+      "pinyin": "shǒubì",
+      "emoji": "💪",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I wave my arm.",
+      "sentenceZh": "我挥挥手臂。"
+    },
+    {
+      "id": "a004",
+      "word": "airplane",
+      "wordZh": "飞机",
+      "pinyin": "fēijī",
+      "emoji": "✈️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The airplane flies high.",
+      "sentenceZh": "飞机飞得很高。"
+    },
+    {
+      "id": "a005",
+      "word": "alligator",
+      "wordZh": "短吻鳄",
+      "pinyin": "duǎnwěn è",
+      "emoji": "🐊",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The alligator swims in the river.",
+      "sentenceZh": "短吻鳄在河里游泳。"
+    },
+    {
+      "id": "a006",
+      "word": "astronaut",
+      "wordZh": "宇航员",
+      "pinyin": "yǔhángyuán",
+      "emoji": "👨‍🚀",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The astronaut goes to the moon.",
+      "sentenceZh": "宇航员去月球。"
+    },
+    {
+      "id": "a007",
+      "word": "angry",
+      "wordZh": "生气",
+      "pinyin": "shēngqì",
+      "emoji": "😠",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The lion looks angry.",
+      "sentenceZh": "狮子看起来很生气。"
+    },
+    {
+      "id": "a008",
+      "word": "asleep",
+      "wordZh": "睡着",
+      "pinyin": "shuìzháo",
+      "emoji": "😴",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The baby is asleep.",
+      "sentenceZh": "宝宝睡着了。"
+    },
+    {
+      "id": "a009",
+      "word": "axe",
+      "wordZh": "斧头",
+      "pinyin": "fǔtou",
+      "emoji": "🪓",
+      "partOfSpeech": "noun",
+      "sentenceEn": "Dad chops wood with an axe.",
+      "sentenceZh": "爸爸用斧头砍柴。"
+    },
+    {
+      "id": "a010",
+      "word": "arrow",
+      "wordZh": "箭",
+      "pinyin": "jiàn",
+      "emoji": "🏹",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The arrow flies fast.",
+      "sentenceZh": "箭飞得很快。"
+    },
+    {
+      "id": "a011",
+      "word": "avocado",
+      "wordZh": "牛油果",
+      "pinyin": "niúyóuguǒ",
+      "emoji": "🥑",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The avocado is green.",
+      "sentenceZh": "牛油果是绿色的。"
+    },
+    {
+      "id": "a012",
+      "word": "acorn",
+      "wordZh": "橡子",
+      "pinyin": "xiàngzǐ",
+      "emoji": "🌰",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The squirrel finds an acorn.",
+      "sentenceZh": "松鼠找到一个橡子。"
+    },
+    {
+      "id": "a013",
+      "word": "artist",
+      "wordZh": "艺术家",
+      "pinyin": "yìshùjiā",
+      "emoji": "🎨",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The artist loves to paint.",
+      "sentenceZh": "艺术家喜欢画画。"
+    },
+    {
+      "id": "a014",
+      "word": "add",
+      "wordZh": "加",
+      "pinyin": "jiā",
+      "emoji": "➕",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Let's add two numbers.",
+      "sentenceZh": "我们来加两个数字。"
+    },
+    {
+      "id": "a015",
+      "word": "ask",
+      "wordZh": "问",
+      "pinyin": "wèn",
+      "emoji": "❓",
+      "partOfSpeech": "verb",
+      "sentenceEn": "I will ask a question.",
+      "sentenceZh": "我要问一个问题。"
+    },
+    {
+      "id": "a016",
+      "word": "anchor",
+      "wordZh": "锚",
+      "pinyin": "máo",
+      "emoji": "⚓",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The boat drops its anchor.",
+      "sentenceZh": "船放下锚。"
+    },
+    {
+      "id": "a017",
+      "word": "alarm",
+      "wordZh": "闹钟",
+      "pinyin": "nàozhōng",
+      "emoji": "⏰",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The alarm rings in the morning.",
+      "sentenceZh": "闹钟早上响了。"
+    },
+    {
+      "id": "a018",
+      "word": "ape",
+      "wordZh": "猿",
+      "pinyin": "yuán",
+      "emoji": "🦍",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The ape climbs the tree.",
+      "sentenceZh": "猿爬树。"
+    },
+    {
+      "id": "a019",
+      "word": "author",
+      "wordZh": "作家",
+      "pinyin": "zuòjiā",
+      "emoji": "✍️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The author writes a story.",
+      "sentenceZh": "作家写故事。"
+    },
+    {
+      "id": "a020",
+      "word": "afraid",
+      "wordZh": "害怕",
+      "pinyin": "hàipà",
+      "emoji": "😨",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel afraid of the dark.",
+      "sentenceZh": "我害怕黑暗。"
+    },
+    {
+      "id": "a021",
+      "word": "animal",
+      "wordZh": "动物",
+      "pinyin": "dòngwù",
+      "emoji": "🐾",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I love every animal.",
+      "sentenceZh": "我喜欢每一种动物。"
+    },
+    {
+      "id": "a022",
+      "word": "ambulance",
+      "wordZh": "救护车",
+      "pinyin": "jiùhùchē",
+      "emoji": "🚑",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The ambulance drives fast.",
+      "sentenceZh": "救护车开得很快。"
+    }
+  ]
+}

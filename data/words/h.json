@@ -1,0 +1,145 @@
+{
+  "letter": "h",
+  "words": [
+    {
+      "id": "h001",
+      "word": "hat",
+      "wordZh": "帽子",
+      "pinyin": "màozi",
+      "emoji": "🎩",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I wear a hat in the sun.",
+      "sentenceZh": "我在太阳下戴帽子。"
+    },
+    {
+      "id": "h002",
+      "word": "horse",
+      "wordZh": "马",
+      "pinyin": "mǎ",
+      "emoji": "🐴",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The horse gallops fast.",
+      "sentenceZh": "马跑得很快。"
+    },
+    {
+      "id": "h003",
+      "word": "house",
+      "wordZh": "房子",
+      "pinyin": "fángzi",
+      "emoji": "🏠",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We live in a house.",
+      "sentenceZh": "我们住在房子里。"
+    },
+    {
+      "id": "h004",
+      "word": "hand",
+      "wordZh": "手",
+      "pinyin": "shǒu",
+      "emoji": "🖐️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I wave my hand hello.",
+      "sentenceZh": "我挥手打招呼。"
+    },
+    {
+      "id": "h005",
+      "word": "heart",
+      "wordZh": "心",
+      "pinyin": "xīn",
+      "emoji": "❤️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "I love you with all my heart.",
+      "sentenceZh": "我全心全意爱你。"
+    },
+    {
+      "id": "h006",
+      "word": "hug",
+      "wordZh": "拥抱",
+      "pinyin": "yōngbào",
+      "emoji": "🤗",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Let's give Mum a hug.",
+      "sentenceZh": "我们给妈妈一个拥抱吧。"
+    },
+    {
+      "id": "h007",
+      "word": "hot",
+      "wordZh": "热",
+      "pinyin": "rè",
+      "emoji": "🥵",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The soup is very hot.",
+      "sentenceZh": "汤很热。"
+    },
+    {
+      "id": "h008",
+      "word": "happy",
+      "wordZh": "开心",
+      "pinyin": "kāixīn",
+      "emoji": "😊",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel happy today.",
+      "sentenceZh": "我今天很开心。"
+    },
+    {
+      "id": "h009",
+      "word": "hill",
+      "wordZh": "小山",
+      "pinyin": "xiǎoshān",
+      "emoji": "🏞️",
+      "partOfSpeech": "noun",
+      "sentenceEn": "We climb the hill.",
+      "sentenceZh": "我们爬小山。"
+    },
+    {
+      "id": "h010",
+      "word": "hair",
+      "wordZh": "头发",
+      "pinyin": "tóufa",
+      "emoji": "💇",
+      "partOfSpeech": "noun",
+      "sentenceEn": "She brushes her hair.",
+      "sentenceZh": "她刷她的头发。"
+    },
+    {
+      "id": "h011",
+      "word": "honey",
+      "wordZh": "蜂蜜",
+      "pinyin": "fēngmì",
+      "emoji": "🍯",
+      "partOfSpeech": "noun",
+      "sentenceEn": "The bear loves honey.",
+      "sentenceZh": "熊喜欢蜂蜜。"
+    },
+    {
+      "id": "h012",
+      "word": "hungry",
+      "wordZh": "饿",
+      "pinyin": "è",
+      "emoji": "🤤",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "I feel hungry before lunch.",
+      "sentenceZh": "午饭前我觉得饿。"
+    },
+    {
+      "id": "h013",
+      "word": "heavy",
+      "wordZh": "重",
+      "pinyin": "zhòng",
+      "emoji": "🪨",
+      "partOfSpeech": "adjective",
+      "sentenceEn": "The rock is very heavy.",
+      "sentenceZh": "这块石头很重。"
+    },
+    {
+      "id": "h014",
+      "word": "hide",
+      "wordZh": "躲",
+      "pinyin": "duǒ",
+      "emoji": "🙈",
+      "partOfSpeech": "verb",
+      "sentenceEn": "Let's hide behind the tree.",
+      "sentenceZh": "我们躲在树后面吧。"
+    }
+  ]
+}
