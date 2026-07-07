@@ -28,12 +28,16 @@ const GameShared = (() => {
   }
 
   function celebrate(text = '⭐') {
+    SFX.playCelebrate();
     const el = document.createElement('div');
     el.className = 'celebrate-burst';
     el.innerHTML = `<div class="celebrate-burst__text">${text}</div>`;
     document.body.appendChild(el);
     setTimeout(() => el.remove(), 900);
   }
+
+  function correctFeedback() { SFX.playCorrect(); }
+  function wrongFeedback() { SFX.playWrong(); }
 
   function randomEncouragement() {
     return ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)];
@@ -51,5 +55,5 @@ const GameShared = (() => {
     return bar;
   }
 
-  return { randomDistractors, shuffle, recordResult, celebrate, randomEncouragement, backBar };
+  return { randomDistractors, shuffle, recordResult, celebrate, randomEncouragement, backBar, correctFeedback, wrongFeedback };
 })();

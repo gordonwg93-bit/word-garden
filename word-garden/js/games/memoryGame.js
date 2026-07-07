@@ -72,6 +72,7 @@ const MemoryGame = (() => {
             const elA = wrap.querySelectorAll('.memory-card')[a];
             const elB = wrap.querySelectorAll('.memory-card')[b];
             if (isMatch) {
+              GameShared.correctFeedback();
               elA.classList.add('memory-card--matched');
               elB.classList.add('memory-card--matched');
               GameShared.recordResult(cards[a].key, 'memoryGame', true);
@@ -84,6 +85,7 @@ const MemoryGame = (() => {
                 }, 200);
               }
             } else {
+              GameShared.wrongFeedback();
               elA.classList.remove('memory-card--flipped');
               elB.classList.remove('memory-card--flipped');
               elA.querySelector('span').textContent = '❓';

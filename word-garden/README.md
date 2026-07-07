@@ -128,6 +128,21 @@ already lives in `root.profiles[profileId]`, so adding a profile-switcher UI lat
 the data model already supports multiple kids, there's just no switcher screen yet. Ask me to add
 one if you need it.
 
+## Sound effects & background music
+All synthesised on-device with the Web Audio API (`js/core/sfx.js`) — no audio files to license,
+host, or keep in sync as the word bank grows. Same idea as using emoji instead of custom art.
+- Short chime/blip sound effects for correct/wrong answers and celebrations, used across all games.
+- A quiet looping background melody (pentatonic, deliberately gentle — it's a backdrop, not a
+  feature) that starts on the child's first tap anywhere in the app (iOS requires a user gesture
+  before any audio can play, so it can't auto-start on load).
+- Both are toggleable independently from the two icon buttons on the home screen (🔊/🔇 for sound
+  effects, 🎵/🚫 for music) — the choice is saved and respected everywhere in the app.
+- To change the tune: edit `MUSIC_SCALE` / `MUSIC_PATTERN` / `NOTE_DURATION` in `js/core/sfx.js` —
+  it's just a list of note frequencies and a sequence of indices into that list.
+- If you'd rather use a real licensed music loop later instead of the synthesised one: drop an
+  .mp3 into `assets/audio/`, and swap `startMusic()` in `sfx.js` to play that file on loop instead
+  of scheduling oscillator notes — everything else (the toggle, the saved preference) stays the same.
+
 ## Notes on the tech choices
 - **Emoji instead of custom illustrations** — renders natively via iPad's Apple emoji font, zero
   images to generate/host for 216+ words. Only the app icon needs actual generated art.

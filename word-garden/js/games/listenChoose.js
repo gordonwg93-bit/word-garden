@@ -36,11 +36,13 @@ const ListenChooseGame = (() => {
         const correct = tile.dataset.id === word.id;
         tile.classList.add(correct ? 'choice-tile--correct' : 'choice-tile--wrong');
         if (correct) {
+          GameShared.correctFeedback();
           GameShared.recordResult(word.id, 'listenChoose', true);
           GameShared.celebrate(GameShared.randomEncouragement());
           Speech.speakEncouragement(GameShared.randomEncouragement());
           setTimeout(() => Router.navigate('play', { game: 'wordBuilder', word: word.id }), 900);
         } else {
+          GameShared.wrongFeedback();
           GameShared.recordResult(word.id, 'listenChoose', false);
           setTimeout(() => { tile.classList.remove('choice-tile--wrong'); }, 500);
         }

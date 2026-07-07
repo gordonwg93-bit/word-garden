@@ -57,6 +57,7 @@ const MissingLetterGame = (() => {
       tilesEl.querySelectorAll('.builder__tile').forEach(tile => {
         tile.addEventListener('click', () => {
           if (tile.dataset.letter === correct) {
+            GameShared.correctFeedback();
             const slot = wrap.querySelector(`[data-blank="${position}"]`);
             slot.textContent = correct;
             slot.style.color = 'var(--color-ink)';
@@ -70,6 +71,7 @@ const MissingLetterGame = (() => {
           } else {
             mistakeMade = true;
             tile.classList.add('builder__tile--wrong');
+            GameShared.wrongFeedback();
             setTimeout(() => tile.classList.remove('builder__tile--wrong'), 400);
           }
         });

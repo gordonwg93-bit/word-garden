@@ -75,6 +75,7 @@ const WordBuilderGame = (() => {
       tile.addEventListener('click', () => {
         const needed = letters[built.length];
         if (tile.dataset.letter === needed) {
+          GameShared.correctFeedback();
           slots[built.length].textContent = tile.dataset.letter;
           tile.classList.add('builder__tile--used');
           built.push(tile.dataset.letter);
@@ -87,6 +88,7 @@ const WordBuilderGame = (() => {
         } else {
           mistakeMade = true;
           tile.classList.add('builder__tile--wrong');
+          GameShared.wrongFeedback();
           setTimeout(() => tile.classList.remove('builder__tile--wrong'), 400);
         }
       });

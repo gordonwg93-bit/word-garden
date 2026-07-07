@@ -30,7 +30,11 @@ const GardenView = (() => {
     wrap.innerHTML = `
       <div class="topbar">
         <h1 class="topbar__title">${profile.avatar} Hi ${profile.name}!</h1>
-        <div class="topbar__stars">🌟 ${masteredIds.length}</div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn--icon" id="sfxToggle" style="background:var(--color-white); box-shadow:var(--shadow-soft); font-size:1.3rem;">${SFX.isSfxOn() ? '🔊' : '🔇'}</button>
+          <button class="btn--icon" id="musicToggle" style="background:var(--color-white); box-shadow:var(--shadow-soft); font-size:1.3rem;">${SFX.isMusicOn() ? '🎵' : '🚫'}</button>
+          <div class="topbar__stars">🌟 ${masteredIds.length}</div>
+        </div>
       </div>
 
       <div class="garden">
@@ -61,6 +65,17 @@ const GardenView = (() => {
 
     wrap.querySelector('#challengeBtn').addEventListener('click', () => {
       Router.navigate('challenge');
+    });
+    wrap.querySelector('#sfxToggle').addEventListener('click', (e) => {
+      const nowOn = !SFX.isSfxOn();
+      SFX.setSfxOn(nowOn);
+      e.currentTarget.textContent = nowOn ? '🔊' : '🔇';
+      if (nowOn) SFX.playTap();
+    });
+    wrap.querySelector('#musicToggle').addEventListener('click', (e) => {
+      const nowOn = !SFX.isMusicOn();
+      SFX.setMusicOn(nowOn);
+      e.currentTarget.textContent = nowOn ? '🎵' : '🚫';
     });
   }
 

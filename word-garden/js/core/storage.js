@@ -28,7 +28,8 @@ const Storage = (() => {
       schemaVersion: SCHEMA_VERSION,
       profiles: {},        // profileId -> profile object
       activeProfileId: null,
-      parentPinHash: null  // optional, see parentGate.js
+      parentPinHash: null,  // optional, see parentGate.js
+      audioSettings: { sfxOn: true, musicOn: true }
     };
   }
 

@@ -57,6 +57,7 @@ const SpeedQuizGame = (() => {
         tile.addEventListener('click', () => {
           const correct = tile.dataset.id === word.id;
           tile.classList.add(correct ? 'choice-tile--correct' : 'choice-tile--wrong');
+          correct ? GameShared.correctFeedback() : GameShared.wrongFeedback();
           GameShared.recordResult(word.id, 'speedQuiz', correct);
           if (correct) correctCount++;
           setTimeout(() => {
@@ -69,6 +70,7 @@ const SpeedQuizGame = (() => {
     }
 
     function showResults() {
+      SFX.playCelebrate();
       const stars = '⭐'.repeat(correctCount) + '☆'.repeat(quizWords.length - correctCount);
       const wrap = document.createElement('div');
       wrap.className = 'screen';

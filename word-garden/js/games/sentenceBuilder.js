@@ -40,6 +40,7 @@ const SentenceBuilderGame = (() => {
         const key = parseInt(tile.dataset.key, 10);
         const expectedKey = placed.length; // words were keyed 0..n in original order
         if (key === expectedKey) {
+          GameShared.correctFeedback();
           slots[placed.length].textContent = tile.textContent;
           tile.classList.add('builder__tile--used');
           placed.push(key);
@@ -48,6 +49,7 @@ const SentenceBuilderGame = (() => {
           }
         } else {
           tile.classList.add('builder__tile--wrong');
+          GameShared.wrongFeedback();
           setTimeout(() => tile.classList.remove('builder__tile--wrong'), 400);
         }
       });
