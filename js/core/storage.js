@@ -44,7 +44,20 @@ const Storage = (() => {
     localStorage.setItem(ROOT_KEY, JSON.stringify(root));
   }
 
-  function getRoot() { return _readRoot(); }
+  function getRoot() {
+    const root = _readRoot();
+    Object.values(root.profiles).forEach(_backfillProfileDefaults);
+    return root;
+  }
+
+  function _backfillProfileDefaults(profile) {
+    if (profile.starBalance === undefined) profile.starBalance = 0;
+    if (!profile.pet) profile.pet = { name: 'Sunny', starsFed: 0 };
+    if (!profile.gardenDecor) profile.gardenDecor = [];
+    if (!profile.languageMode) profile.languageMode = 'en-first';
+    return profile;
+  }
+
   function saveRoot(root) { _writeRoot(root); }
 
   function defaultProfile(name, avatar) {
@@ -55,12 +68,17 @@ const Storage = (() => {
       createdAt: new Date().toISOString(),
       // per-word mastery: wordId -> { seenCount, correctStreak, mastered, lastSeen }
       wordStats: {},
-      // per-day challenge log: 'YYYY-MM-DD' -> { wordIds: [...], parentConfirmed: bool, completedAt }
+      // per-day challenge log: 'YYYY-MM-DD' -> [ {id, wordIds, ...} ] confirmed challenges (used to avoid repeats)
       dailyLog: {},
       currentStreak: 0,
       longestStreak: 0,
       totalMinutes: 0,
-      lastActiveDate: null
+      lastActiveDate: null,
+      // spendable currency - +1 each time a NEW word is mastered, spent on pet feeding / shop
+      starBalance: 0,
+      pet: { name: 'Sunny', starsFed: 0 },
+      gardenDecor: [],           // array of owned shop item ids
+      languageMode: 'en-first'   // 'en-first' | 'zh-first' - which language leads on screen + in audio
     };
   }
 

@@ -15,10 +15,7 @@ const SentenceBuilderGame = (() => {
     wrap.className = 'screen';
     wrap.appendChild(GameShared.backBar(word));
     wrap.innerHTML += `
-      <div class="bindi-bubble">
-        <div class="bindi-bubble__avatar">🧚</div>
-        <div class="bindi-bubble__text">Put the words in the right order!</div>
-      </div>
+      ${GameShared.bindiBubble('Put the words in the right order!', '把单词按正确的顺序排好！')}
       <div class="builder">
         <div style="font-size:3.5rem;">${word.emoji}</div>
         <div class="builder__slots" id="slots" style="min-height:64px; flex-wrap:wrap;">
@@ -27,9 +24,11 @@ const SentenceBuilderGame = (() => {
         <div class="builder__tiles" id="tiles">
           ${tiles.map(t => `<button class="builder__tile" style="width:auto; padding:0 14px; font-family:var(--font-body); font-size:1.2rem;" data-key="${t.key}">${t.text}</button>`).join('')}
         </div>
+        <p id="zhReveal" style="font-family:var(--font-write); color:var(--color-lilac-dk); font-size:1.3rem; min-height:1.6em; text-align:center;"></p>
       </div>
     `;
     root.appendChild(wrap);
+    GameShared.wireBubble(wrap, 'Put the words in the right order!', '把单词按正确的顺序排好！');
     Speech.speak(word.sentenceEn, 'en');
 
     const slots = wrap.querySelectorAll('.builder__slot');
@@ -57,9 +56,10 @@ const SentenceBuilderGame = (() => {
 
     function finish() {
       GameShared.recordResult(word.id, 'sentenceBuilder', true);
+      wrap.querySelector('#zhReveal').textContent = word.sentenceZh;
       Speech.speak(word.sentenceEn, 'en').then(() => Speech.speak(word.sentenceZh, 'zh'));
       GameShared.celebrate('Nice sentence! 📝');
-      setTimeout(() => Router.navigate('word', { id: word.id }), 1600);
+      setTimeout(() => Router.navigate('word', { id: word.id }), 1800);
     }
   }
 

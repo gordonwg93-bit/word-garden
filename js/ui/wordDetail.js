@@ -18,6 +18,10 @@ const WordDetail = (() => {
     const prevWord = siblings[myIndex - 1];
     const nextWord = siblings[myIndex + 1];
 
+    const zhFirst = profile.languageMode === 'zh-first';
+    const heroText = zhFirst ? word.wordZh : word.word;
+    const subText = zhFirst ? `${word.word}` : `${word.wordZh} · ${word.pinyin}`;
+
     const wrap = document.createElement('div');
     wrap.className = 'screen';
     wrap.innerHTML = `
@@ -29,15 +33,18 @@ const WordDetail = (() => {
 
       <div class="word-stage">
         <div class="word-stage__emoji">${word.emoji}</div>
-        <div class="word-stage__word">${word.word}</div>
+        <div class="word-stage__word">${heroText}</div>
         <div class="word-stage__zh">
-          <span class="word-stage__zh-char">${word.wordZh}</span>
-          <span class="word-stage__pinyin">${word.pinyin}</span>
+          <span class="word-stage__zh-char">${subText}</span>
         </div>
+        ${zhFirst ? `<div class="word-stage__pinyin">${word.pinyin}</div>` : ''}
         <div class="word-stage__audio-row">
-          <button class="btn btn--secondary" id="playBtn">🔊 Hear it</button>
+          <button class="btn btn--secondary" id="playBtn">🔊 Hear the word</button>
         </div>
         <p class="word-stage__sentence">"${word.sentenceEn}"<br>"${word.sentenceZh}"</p>
+        <div class="word-stage__audio-row">
+          <button class="btn btn--secondary" id="playSentenceBtn">🔊 Hear the sentence</button>
+        </div>
 
         <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:14px;">
           <button class="btn btn--sun" data-play="listenChoose">🎧 Listen & Choose</button>
@@ -58,6 +65,8 @@ const WordDetail = (() => {
     const doSpeak = () => Speech.speakBilingual(word.word, word.wordZh);
     wrap.querySelector('#playBtn').addEventListener('click', doSpeak);
     doSpeak(); // auto-play on first arrival, matches "lots of sound" requirement
+
+    wrap.querySelector('#playSentenceBtn').addEventListener('click', () => Speech.speakBilingual(word.sentenceEn, word.sentenceZh));
 
     wrap.querySelector('#backBtn').addEventListener('click', () => Router.navigate('letter', { l: letter }));
     if (prevWord) wrap.querySelector('#prevBtn').addEventListener('click', () => Router.navigate('word', { id: prevWord.id }));

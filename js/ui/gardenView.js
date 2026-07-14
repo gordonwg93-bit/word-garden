@@ -33,7 +33,7 @@ const GardenView = (() => {
         <div style="display:flex; align-items:center; gap:8px;">
           <button class="btn--icon" id="sfxToggle" style="background:var(--color-white); box-shadow:var(--shadow-soft); font-size:1.3rem;">${SFX.isSfxOn() ? '🔊' : '🔇'}</button>
           <button class="btn--icon" id="musicToggle" style="background:var(--color-white); box-shadow:var(--shadow-soft); font-size:1.3rem;">${SFX.isMusicOn() ? '🎵' : '🚫'}</button>
-          <div class="topbar__stars">🌟 ${masteredIds.length}</div>
+          <div class="topbar__stars">🌟 ${profile.starBalance || 0}</div>
         </div>
       </div>
 
@@ -47,6 +47,10 @@ const GardenView = (() => {
         <div class="garden__plot" id="gardenPlot">
           ${masteredIds.length ? masteredIds.map((id, i) => `<span class="garden__flower" style="animation-delay:${i * 40}ms">${FLOWER_EMOJIS[i % FLOWER_EMOJIS.length]}</span>`).join('')
             : `<p class="garden__empty">Learn your first word to plant a flower! 🌱</p>`}
+          ${profile.gardenDecor.map(id => {
+            const item = SHOP_CATALOG.find(i => i.id === id);
+            return item ? `<span class="garden__flower" style="font-size:2.8rem;">${item.emoji}</span>` : '';
+          }).join('')}
         </div>
         <div class="garden__cta">
           <div class="garden__challenge-card">
@@ -57,6 +61,14 @@ const GardenView = (() => {
             </div>
             <button class="btn ${readyForReview ? 'btn--sun' : ''}" id="challengeBtn">${readyForReview ? 'Finish up' : 'Start'}</button>
           </div>
+          <div class="garden__challenge-card">
+            <div class="garden__challenge-card__icon">🐾</div>
+            <div class="garden__challenge-card__text">
+              <strong>${profile.pet.name} is waiting!</strong>
+              <span>Feed with stars, watch them grow</span>
+            </div>
+            <button class="btn btn--secondary" id="petCardBtn">Visit</button>
+          </div>
         </div>
       </div>
     `;
@@ -65,6 +77,9 @@ const GardenView = (() => {
 
     wrap.querySelector('#challengeBtn').addEventListener('click', () => {
       Router.navigate('challenge');
+    });
+    wrap.querySelector('#petCardBtn').addEventListener('click', () => {
+      Router.navigate('pet');
     });
     wrap.querySelector('#sfxToggle').addEventListener('click', (e) => {
       const nowOn = !SFX.isSfxOn();
@@ -94,6 +109,7 @@ const GardenView = (() => {
     const items = [
       { id: 'home', icon: '🏡', label: 'Garden' },
       { id: 'letters', icon: '🔤', label: 'Letters' },
+      { id: 'pet', icon: '🐾', label: 'Pet' },
       { id: 'challenge', icon: '🎯', label: 'Challenge' },
       { id: 'games', icon: '🎮', label: 'Games' },
       { id: 'parent', icon: '👪', label: 'Parents' },

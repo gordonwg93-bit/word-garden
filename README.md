@@ -128,6 +128,44 @@ already lives in `root.profiles[profileId]`, so adding a profile-switcher UI lat
 the data model already supports multiple kids, there's just no switcher screen yet. Ask me to add
 one if you need it.
 
+## Daily challenge word selection
+Words are picked randomly from across the whole alphabet (not alphabetically from A), so day 1
+isn't always "apple, ant, arm...". A word that's already been part of a **parent-confirmed**
+challenge is never picked again as a "new" word — see `_confirmedWordIds()` in
+`js/core/dailyChallenge.js`, which scans `profile.dailyLog` (every confirmed challenge ever) to
+build the exclusion list. Words still being learned (introduced but not yet mastered) can
+legitimately reappear as review slots — that repetition is intentional spaced practice, not a bug.
+
+## Pet + Garden Shop (engagement features)
+Two ways stars get spent, both purely positive-reinforcement — no hunger/decay/guilt mechanics,
+because punishing a 4-5 year old for not opening the app isn't the goal:
+- **Pet** (`js/ui/petView.js`, route `#pet`): feed a garden companion with stars (1 star per feed).
+  It grows through 5 stages (🥚→🐣→🐥→🦋→✨🦋✨) and never regresses — growth is one-directional.
+  Rename it anytime. Stage thresholds are in the `STAGES` array at the top of the file.
+- **Garden Shop** (`js/ui/shopView.js`, route `#shop`): spend stars on decorations (fairy cottage,
+  pond, fountain, etc.) that appear permanently in the home garden plot. Catalog lives in
+  `js/core/shopCatalog.js` — add a new item by adding one line there.
+- **Currency**: `profile.starBalance` is separate from the "words mastered" count shown to
+  parents — it goes up by 1 the moment a word is newly mastered (`js/core/progress.js`) and goes
+  down when spent. The parent dashboard's mastered-word count never decreases even if all stars
+  get spent — that's the permanent learning record; stars are just spending money.
+
+## Chinese-speaking-child support
+- **Every instruction is now bilingual with sound.** Bindi's speech-bubble prompts in every game
+  show English + Chinese text together, plus a 🔊 button that speaks both — see
+  `GameShared.bindiBubble()` / `wireBubble()` in `js/games/shared.js`. A child who can't yet read
+  English well can still follow what each game is asking them to do.
+- **Language focus toggle** (Parent Dashboard → "Learning language focus"): switch between
+  English-first and Chinese-first. This changes which language is the big hero text on the Word
+  Detail screen, and which language is spoken first everywhere audio plays bilingually (see
+  `_isZhFirst()` in `js/core/speech.js`). It's per-child (`profile.languageMode`), so siblings with
+  different needs can each have their own setting.
+- **Example sentences now have their own "Hear the sentence" button** on the Word Detail screen,
+  speaking the English sentence then the Chinese translation (or reversed, per the language
+  toggle) — previously only the single word had an audio button, the sentence was text-only.
+  Sentence Builder also now displays the Chinese sentence as text once the child completes it, not
+  just as audio.
+
 ## Sound effects & background music
 All synthesised on-device with the Web Audio API (`js/core/sfx.js`) — no audio files to license,
 host, or keep in sync as the word bank grows. Same idea as using emoji instead of custom art.

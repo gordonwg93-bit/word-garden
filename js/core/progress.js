@@ -41,8 +41,9 @@ const Progress = (() => {
         stat.gamesUsedForStreak.push(gameId);
       }
       stat.correctStreak += 1;
-      if (stat.correctStreak >= MASTERY_STREAK && stat.gamesUsedForStreak.length >= 2) {
+      if (stat.correctStreak >= MASTERY_STREAK && stat.gamesUsedForStreak.length >= 2 && !stat.mastered) {
         stat.mastered = true;
+        profile.starBalance = (profile.starBalance || 0) + 1; // spendable currency for pet/shop
       }
     } else {
       // Don't punish too harshly - a slip shouldn't erase all progress,

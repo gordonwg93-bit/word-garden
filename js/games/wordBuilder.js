@@ -37,10 +37,7 @@ const WordBuilderGame = (() => {
     wrap.className = 'screen';
     wrap.appendChild(GameShared.backBar(word));
     wrap.innerHTML += `
-      <div class="bindi-bubble">
-        <div class="bindi-bubble__avatar">🧚</div>
-        <div class="bindi-bubble__text">Let's spell it! Tap the letters in order.</div>
-      </div>
+      ${GameShared.bindiBubble("Let's spell it! Tap the letters in order.", '我们来拼写吧！按顺序点字母。')}
       <div class="builder">
         <div style="font-size:5rem;">${word.emoji}</div>
         <button class="btn btn--secondary" id="replayBtn">🔊 Hear it</button>
@@ -53,6 +50,7 @@ const WordBuilderGame = (() => {
       </div>
     `;
     root.appendChild(wrap);
+    GameShared.wireBubble(wrap, "Let's spell it! Tap the letters in order.", '我们来拼写吧！按顺序点字母。');
 
     Speech.speakBilingual(word.word, word.wordZh);
     wrap.querySelector('#replayBtn').addEventListener('click', () => Speech.speak(word.word, 'en'));

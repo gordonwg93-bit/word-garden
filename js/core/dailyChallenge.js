@@ -15,15 +15,21 @@
 const DailyChallenge = (() => {
   const CHALLENGE_SIZE = 5;
 
-  function _lettersInOrder() {
-    return 'abcdefghijklmnopqrstuvwxyz'.split('');
+  function _confirmedWordIds(profile) {
+    const set = new Set();
+    Object.values(profile.dailyLog).forEach(challenges => {
+      challenges.forEach(ch => (ch.wordIds || []).forEach(id => set.add(id)));
+    });
+    return set;
   }
 
   async function _pickNextWords(root, profileId, allWordsByLetter) {
     const profile = root.profiles[profileId];
     const introducedIds = new Set(Object.keys(profile.wordStats));
+    const confirmedIds = _confirmedWordIds(profile);
 
     // 1. Prefer introduced-but-not-mastered words (spaced review), oldest first.
+    // These CAN repeat across challenges on purpose - that's the point of review.
     const reviewCandidates = Object.entries(profile.wordStats)
       .filter(([, s]) => !s.mastered)
       .sort((a, b) => new Date(a[1].lastSeen) - new Date(b[1].lastSeen))
@@ -35,16 +41,16 @@ const DailyChallenge = (() => {
       picked.push(id);
     }
 
-    // 2. Fill remaining slots with new words, walking the alphabet in order.
-    outer:
-    for (const letter of _lettersInOrder()) {
-      const words = allWordsByLetter[letter] || [];
-      for (const w of words) {
-        if (picked.length >= CHALLENGE_SIZE) break outer;
-        if (!introducedIds.has(w.id) && !picked.includes(w.id)) {
-          picked.push(w.id);
-        }
-      }
+    // 2. Fill remaining slots with RANDOM new words from anywhere in the alphabet
+    // (not just starting at A) - but never a word already confirmed-done before.
+    const allWords = Object.values(allWordsByLetter).flat();
+    const freshPool = allWords.filter(w =>
+      !introducedIds.has(w.id) && !confirmedIds.has(w.id) && !picked.includes(w.id)
+    );
+    const shuffledFresh = freshPool.sort(() => Math.random() - 0.5);
+    for (const w of shuffledFresh) {
+      if (picked.length >= CHALLENGE_SIZE) break;
+      picked.push(w.id);
     }
 
     return picked.slice(0, CHALLENGE_SIZE);

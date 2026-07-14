@@ -47,11 +47,26 @@ const Speech = (() => {
     });
   }
 
-  // Speak the word, a short pause, then its Chinese translation.
+  // Speak the word, a short pause, then its translation. Order follows the
+  // active profile's languageMode so a Chinese-first family can flip which
+  // language leads, everywhere in the app, from one setting.
   async function speakBilingual(wordEn, wordZh) {
-    await speak(wordEn, 'en');
+    const zhFirst = _isZhFirst();
+    const first = zhFirst ? wordZh : wordEn;
+    const firstLang = zhFirst ? 'zh' : 'en';
+    const second = zhFirst ? wordEn : wordZh;
+    const secondLang = zhFirst ? 'en' : 'zh';
+    await speak(first, firstLang);
     await new Promise(r => setTimeout(r, 350));
-    await speak(wordZh, 'zh');
+    await speak(second, secondLang);
+  }
+
+  function _isZhFirst() {
+    try {
+      const root = Storage.getRoot();
+      const profile = root.profiles[root.activeProfileId];
+      return profile && profile.languageMode === 'zh-first';
+    } catch (e) { return false; }
   }
 
   function speakEncouragement(phrase) {

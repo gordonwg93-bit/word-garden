@@ -55,5 +55,26 @@ const GameShared = (() => {
     return bar;
   }
 
-  return { randomDistractors, shuffle, recordResult, celebrate, randomEncouragement, backBar, correctFeedback, wrongFeedback };
+  // Bindi's instruction bubble, always bilingual with a tap-to-hear speaker,
+  // so a Chinese-speaking child isn't stuck relying on English reading to
+  // follow what to do.
+  function bindiBubble(textEn, textZh) {
+    return `
+      <div class="bindi-bubble">
+        <div class="bindi-bubble__avatar">🧚</div>
+        <div class="bindi-bubble__text">
+          <div>${textEn}</div>
+          <div style="font-family:var(--font-write); color:var(--color-lilac-dk); margin-top:2px;">${textZh}</div>
+        </div>
+        <button class="btn--icon" data-bubble-speak style="background:var(--color-white); box-shadow:var(--shadow-soft); font-size:1.1rem; width:40px; height:40px; flex-shrink:0;">🔊</button>
+      </div>`;
+  }
+
+  function wireBubble(root, textEn, textZh) {
+    const btn = root.querySelector('[data-bubble-speak]');
+    if (!btn) return;
+    btn.addEventListener('click', () => Speech.speakBilingual(textEn, textZh));
+  }
+
+  return { randomDistractors, shuffle, recordResult, celebrate, randomEncouragement, backBar, correctFeedback, wrongFeedback, bindiBubble, wireBubble };
 })();

@@ -129,7 +129,7 @@
 /* --- Bindi mascot speech bubble --- */
 .bindi-bubble {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 12px;
   margin: 12px 0;
 }

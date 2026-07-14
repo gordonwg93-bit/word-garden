@@ -37,6 +37,15 @@ const ParentDashboard = (() => {
         ${_statCard('🔥', profile.currentStreak, 'Day streak')}
       </div>
 
+      <h3>Learning language focus</h3>
+      <div class="card" style="margin-bottom:20px;">
+        <p style="margin-top:0; color:var(--color-ink-light); font-size:0.9rem;">Which language leads on screen and in the audio order, everywhere in the app.</p>
+        <div style="display:flex; gap:10px;">
+          <button class="btn ${profile.languageMode !== 'zh-first' ? '' : 'btn--ghost'}" id="langEnBtn" style="flex:1;">English first</button>
+          <button class="btn ${profile.languageMode === 'zh-first' ? '' : 'btn--ghost'}" id="langZhBtn" style="flex:1;">中文 first</button>
+        </div>
+      </div>
+
       <h3>Progress by letter</h3>
       <div style="display:flex; flex-direction:column; gap:6px; margin-bottom:20px;">
         ${letterRows.map(r => `
@@ -68,6 +77,23 @@ const ParentDashboard = (() => {
     `;
     root.appendChild(wrap);
     root.appendChild(GardenView.bottomNav('parent'));
+
+    wrap.querySelector('#langEnBtn').addEventListener('click', async () => {
+      const store2 = Storage.getRoot();
+      store2.profiles[profile.id].languageMode = 'en-first';
+      Storage.saveRoot(store2);
+      const appRoot = document.getElementById('app');
+      appRoot.innerHTML = '';
+      await render(appRoot);
+    });
+    wrap.querySelector('#langZhBtn').addEventListener('click', async () => {
+      const store2 = Storage.getRoot();
+      store2.profiles[profile.id].languageMode = 'zh-first';
+      Storage.saveRoot(store2);
+      const appRoot = document.getElementById('app');
+      appRoot.innerHTML = '';
+      await render(appRoot);
+    });
 
     wrap.querySelector('#resetBtn').addEventListener('click', async () => {
       const ok = await ParentGate.prompt({ title: 'Are you sure?', subtitle: 'This clears all progress for this child. One more check:' });

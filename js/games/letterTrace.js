@@ -16,10 +16,7 @@ const LetterTraceGame = (() => {
     wrap.className = 'screen';
     wrap.appendChild(GameShared.backBar(word));
     wrap.innerHTML += `
-      <div class="bindi-bubble">
-        <div class="bindi-bubble__avatar">🧚</div>
-        <div class="bindi-bubble__text">Trace the word with your finger!</div>
-      </div>
+      ${GameShared.bindiBubble('Trace the word with your finger!', '用手指描出这个词！')}
       <div class="trace-wrap">
         <div class="trace-canvas-holder">
           <div class="trace-guide">${word.word}</div>
@@ -32,6 +29,7 @@ const LetterTraceGame = (() => {
       </div>
     `;
     root.appendChild(wrap);
+    GameShared.wireBubble(wrap, 'Trace the word with your finger!', '用手指描出这个词！');
     Speech.speak(word.word, 'en');
 
     const holder = wrap.querySelector('.trace-canvas-holder');

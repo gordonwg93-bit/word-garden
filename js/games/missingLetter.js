@@ -25,10 +25,7 @@ const MissingLetterGame = (() => {
     wrap.className = 'screen';
     wrap.appendChild(GameShared.backBar(word));
     wrap.innerHTML += `
-      <div class="bindi-bubble">
-        <div class="bindi-bubble__avatar">🧚</div>
-        <div class="bindi-bubble__text">Fill in the missing letters!</div>
-      </div>
+      ${GameShared.bindiBubble('Fill in the missing letters!', '填上缺少的字母！')}
       <div class="builder">
         <div style="font-size:5rem;">${word.emoji}</div>
         <button class="btn btn--secondary" id="replayBtn">🔊 Hear it</button>
@@ -41,6 +38,7 @@ const MissingLetterGame = (() => {
       </div>
     `;
     root.appendChild(wrap);
+    GameShared.wireBubble(wrap, 'Fill in the missing letters!', '填上缺少的字母！');
     Speech.speakBilingual(word.word, word.wordZh);
     wrap.querySelector('#replayBtn').addEventListener('click', () => Speech.speak(word.word, 'en'));
 

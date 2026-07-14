@@ -7,7 +7,7 @@
    CACHE_VERSION so returning devices fetch the new files
    instead of serving a stale cached list.
    ========================================================= */
-const CACHE_VERSION = 'word-garden-v3';
+const CACHE_VERSION = 'word-garden-v4';
 
 const CORE_ASSETS = [
   './',
@@ -25,6 +25,7 @@ const CORE_ASSETS = [
   './js/core/wordDataLoader.js',
   './js/core/parentGate.js',
   './js/core/dailyChallenge.js',
+  './js/core/shopCatalog.js',
   './js/core/router.js',
   './js/games/shared.js',
   './js/games/listenChoose.js',
@@ -42,6 +43,8 @@ const CORE_ASSETS = [
   './js/ui/gamesHub.js',
   './js/ui/challenge.js',
   './js/ui/parentDashboard.js',
+  './js/ui/petView.js',
+  './js/ui/shopView.js',
   './js/app.js',
   './data/words/index.json'
 ];

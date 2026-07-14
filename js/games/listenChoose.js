@@ -14,10 +14,7 @@ const ListenChooseGame = (() => {
     wrap.className = 'screen';
     wrap.appendChild(GameShared.backBar(word));
     wrap.innerHTML += `
-      <div class="bindi-bubble">
-        <div class="bindi-bubble__avatar">🧚</div>
-        <div class="bindi-bubble__text">Which one am I saying?</div>
-      </div>
+      ${GameShared.bindiBubble('Which one am I saying?', '我说的是哪一个？')}
       <div style="text-align:center; margin-bottom:16px;">
         <button class="btn btn--secondary" id="replayBtn">🔊 Hear it again</button>
       </div>
@@ -26,6 +23,7 @@ const ListenChooseGame = (() => {
       </div>
     `;
     root.appendChild(wrap);
+    GameShared.wireBubble(wrap, 'Which one am I saying?', '我说的是哪一个？');
 
     const speakTarget = () => Speech.speakBilingual(word.word, word.wordZh);
     speakTarget();

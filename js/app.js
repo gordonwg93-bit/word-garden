@@ -15,6 +15,8 @@
   Router.register('play', PlayRouter.render);
   Router.register('challenge', ChallengeView.render);
   Router.register('parent', ParentDashboard.render);
+  Router.register('pet', PetView.render);
+  Router.register('shop', ShopView.render);
 
   if (!store.activeProfileId) {
     window.location.hash = 'onboarding';
