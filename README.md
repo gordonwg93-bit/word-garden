@@ -128,6 +128,29 @@ already lives in `root.profiles[profileId]`, so adding a profile-switcher UI lat
 the data model already supports multiple kids, there's just no switcher screen yet. Ask me to add
 one if you need it.
 
+## Sentence Builder: per-word Chinese + audio
+Every tile in Make a Sentence (not just the target word) shows a Chinese gloss and speaks both
+languages when tapped. Translation source, in priority order (`js/core/sentenceGloss.js`):
+1. If the sentence word is itself one of the 327 vocabulary words, its existing `wordZh` is reused.
+2. Otherwise a hand-translated dictionary of ~155 common connector/grammar words (the, is, my,
+   wears, together, before...) covers the words that repeat across many sentences.
+3. Common suffixes (-s, -es, -ing, -ed, -ies) are stripped before both lookups, so "eats" / "flies"
+   / "grapes" still match their base word — this works well for Chinese specifically since Chinese
+   verbs/nouns don't conjugate, so reusing the base translation is actually correct.
+4. Articles (a/an/the) are intentionally left blank — Chinese has no direct equivalent, so no gloss
+   is the linguistically correct behaviour, not a gap.
+
+This currently covers about **75% of all sentence-tiles** across the whole word bank. The
+remaining ~25% is mostly one-off content words (e.g. "toothbrush", "gallops") that only appear in
+a single sentence — those tiles still work fine, they just show English only with English audio.
+To close more of the gap later, add entries to `FILLER_DICT` in `js/core/sentenceGloss.js`.
+
+## Letter Trace: long-word fix
+Longer words (airplane, alligator, watermelon...) were being cropped by a fixed box size and font
+size. The trace box now sizes itself to the word: it widens for words over 6 letters (up to the
+viewport width) and computes a font size that fits the whole word with room to spare, instead of
+using one fixed size for every word. See `fitTraceBox()` in `js/games/letterTrace.js`.
+
 ## Daily challenge word selection
 Words are picked randomly from across the whole alphabet (not alphabetically from A), so day 1
 isn't always "apple, ant, arm...". A word that's already been part of a **parent-confirmed**

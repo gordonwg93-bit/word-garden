@@ -33,8 +33,25 @@ const LetterTraceGame = (() => {
     Speech.speak(word.word, 'en');
 
     const holder = wrap.querySelector('.trace-canvas-holder');
+    const guide = wrap.querySelector('.trace-guide');
     const canvas = wrap.querySelector('#traceCanvas');
     const ctx = canvas.getContext('2d');
+
+    // Longer words (e.g. "airplane", "alligator", "watermelon") were being
+    // cropped by a fixed font-size + fixed box width. Size both to the word
+    // itself: widen the box for long words (up to the viewport), then shrink
+    // the font just enough that the whole word fits with breathing room.
+    function fitTraceBox() {
+      const vw = window.innerWidth;
+      const wide = word.word.length > 6;
+      const boxWidth = Math.min(vw * (wide ? 0.94 : 0.9), wide ? 640 : 420);
+      holder.style.width = boxWidth + 'px';
+      // approx average glyph width for a bold display font ~0.62x font-size
+      let fontPx = (boxWidth * 0.88) / (word.word.length * 0.62);
+      fontPx = Math.max(36, Math.min(fontPx, 160));
+      guide.style.fontSize = fontPx + 'px';
+    }
+    fitTraceBox();
 
     function sizeCanvas() {
       const rect = holder.getBoundingClientRect();
@@ -49,6 +66,12 @@ const LetterTraceGame = (() => {
       ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--color-blossom');
     }
     sizeCanvas();
+    const onResize = () => {
+      if (!document.body.contains(holder)) { window.removeEventListener('resize', onResize); return; }
+      fitTraceBox();
+      sizeCanvas();
+    };
+    window.addEventListener('resize', onResize);
 
     let drawing = false;
     function pos(e) {
